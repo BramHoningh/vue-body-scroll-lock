@@ -1,7 +1,7 @@
 {
   "name": "v-body-scroll-lock",
   "description": "Vue directive for an easy use of the body-scroll-lock library.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,8 +9,10 @@
     "build-npm": "rimraf dist && babel src -d dist"
   },
   "main": "dist/directives/v-body-scroll-lock.js",
-  "repository" : "git",
-  "url" : "https://github.com/Pixeldenker/vue-body-scroll-lock",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/Pixeldenker/vue-body-scroll-lock"
+  },
   "keywords" : [
     "vue",
     "directive",

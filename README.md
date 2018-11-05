@@ -1,26 +1,71 @@
-# v-bsl
+# v-body-scroll-lock
+A Vue directive to lock the body from scrolling without stopping the target element from scrolling.<br>
+Uses the body-scroll-lock library ([https://github.com/willmcpo/body-scroll-lock](https://github.com/willmcpo/body-scroll-lock)).<br>
+Works on mobile and tablet (iOS, Android) and desktop (Chrome, Firefox, Safari). 
 
-## Project setup
+## Table of Contents
+
+- [Installation](#installation)
+- [How to use](#how-to-use)
+- [Issues](#issues)
+- [Contributing](#contributing)
+
+<a name="installation"></a>
+## Installation
+#### Yarn
 ```
-yarn install
+yarn add v-body-scroll-lock
+```
+#### Npm
+```
+npm i v-body-scroll-lock --save
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
+<a name="how-to-use"></a>
+## How to use
+Add `v-body-scroll-lock` or `v-bsl` (short version) to the element which you want to keep scrollable.<br>
+`v-body-scroll-lock` and `v-bsl` take a `boolean` as an argument like `v-body-scroll-lock="modalIsOpen"`<br>
+If `modalIsOpen` is true, *body scroll lock* will be applied to other elements except for the one which has `v-body-scroll-lock="modalIsOpen"`
+
+#### Code
+For a more deep example checkout `App.vue` in `/src/App.vue`.
+```html
+<template>
+    <div v-body-scroll-lock="modalIsOpen"  
+         v-show="modalIsOpen" 
+         class="modal">
+         <p>This is a modal! I am scrollable while the body is not!</p>
+         <button @click="closeModal">Close modal</button>
+    </div>
+</template>
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
+```js
+<script>
+export default {
+    name: 'modal',
+    data() {
+        return {
+            modalIsOpen: false,   
+        }
+    },
+    methods: {
+        closeModal() {
+            this.modalIsOpen = false;
+        },
+        openModal() {
+            this.modalIsOpen = true;
+        }
+    }
+}
+</script>
 ```
 
-### Run your tests
-```
-yarn run test
-```
+<a name="issues"></a>
+## Issues
+Issues can be created on the [issues](https://github.com/Pixeldenker/vue-body-scroll-lock/issues) page.
 
-### Lints and fixes files
-```
-yarn run lint
-```
+<a name="contributing"></a>
+## Contributing
+To contribute, please make a [pull request](https://github.com/Pixeldenker/vue-body-scroll-lock/pulls).
+
