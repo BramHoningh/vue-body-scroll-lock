@@ -7,6 +7,7 @@ Works on mobile and tablet (iOS, Android) and desktop (Chrome, Firefox, Safari).
 
 - [Installation](#installation)
 - [How to use](#how-to-use)
+- [Options](#options)
 - [Issues](#issues)
 - [Contributing](#contributing)
 
@@ -60,6 +61,14 @@ export default {
 }
 </script>
 ```
+<a name="options"></a>
+## Options
+#### reserveScrollBarGap
+Reserves the with of the scrollbar and prevents the unpleasant flickering effect that can occur when locking the body scroll.<br>
+More info [here](https://github.com/willmcpo/body-scroll-lock#options).
+
+To enable the `reserveScrollBarGap` option add `:reserveScrollBarGap` after `v-body-scroll-lock` or `v-bsl`.<br>
+Example: `v-body-scroll-lock:reserveScrollBarGap="modalIsOpen"`.
 
 <a name="issues"></a>
 ## Issues

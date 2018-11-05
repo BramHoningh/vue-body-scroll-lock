@@ -1,12 +1,13 @@
 <template>
   <div id="app">
       <transition name="fade">
-          <Modal v-body-scroll-lock="modalIsOpen"
+          <Modal v-body-scroll-lock:reserveScrollBarGap="modalIsOpen"
                  v-show="modalIsOpen"
                  :modal-is-open="modalIsOpen"
                  @closeModal="closeModal" />
       </transition>
 
+      <h1>jfklsdjfldsjlfksdjlkfjsdlkfjsldkjflsdjfsdjfljlkfjsldfjsdklfsdklfjksdfdsjl</h1>
       <transition name="fade" mode="out-in">
           <div v-if="!modalIsOpen">
               <h1>This is a very long page, try scrolling.</h1>
@@ -43,14 +44,20 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    padding-top: 20px;
     height: 2000px;
+    background-color: gray;
 }
 
 .fade-enter-active, .fade-leave-active {

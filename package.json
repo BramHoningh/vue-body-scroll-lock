@@ -1,7 +1,7 @@
 {
   "name": "v-body-scroll-lock",
   "description": "Vue directive for an easy use of the body-scroll-lock library.",
-  "version": "1.0.2",
+  "version": "1.1.3",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
