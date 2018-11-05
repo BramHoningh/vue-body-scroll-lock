@@ -1,14 +1,19 @@
 {
-  "name": "v-bsl",
-  "version": "0.1.0",
-  "private": true,
+  "name": "v-body-scroll-lock",
+  "description": "Vue directive for an easy use of the body-scroll-lock library.",
+  "version": "0.1.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-npm": "rimraf dist && babel src -d dist"
   },
+  "main": "dist/directives/v-body-scroll-lock.js",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "body-scroll-lock": "^2.5.10",
+    "rimraf": "^2.6.2",
     "vue": "^2.5.17"
   },
   "devDependencies": {
