@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/dw/localeval.svg)](https://www.npmjs.com/package/v-body-scroll-lock)
+
 # v-body-scroll-lock
 A Vue directive to lock the body from scrolling without stopping the target element from scrolling.<br>
 Uses the body-scroll-lock library ([https://github.com/willmcpo/body-scroll-lock](https://github.com/willmcpo/body-scroll-lock)).<br>
