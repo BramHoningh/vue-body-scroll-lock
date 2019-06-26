@@ -23,6 +23,14 @@ yarn add v-body-scroll-lock
 ```
 npm i v-body-scroll-lock --save
 ```
+#### Install the Vue plugin
+In your main JS file first import this plugin
+
+`import VBodyScrollLock from 'v-body-scroll-lock'`
+
+Install the plugin
+
+`Vue.use(VBodyScrollLock)`
 
 <a name="how-to-use"></a>
 ## How to use
