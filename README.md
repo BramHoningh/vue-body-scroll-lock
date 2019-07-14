@@ -42,9 +42,11 @@ If `modalIsOpen` is true, *body scroll lock* will be applied to other elements e
 For a more deep example checkout `App.vue` in `/src/App.vue`.
 ```html
 <template>
-    <div v-body-scroll-lock="modalIsOpen"  
+    <div 
+         v-body-scroll-lock="modalIsOpen"  
          v-show="modalIsOpen" 
-         class="modal">
+         class="modal"
+    >
          <p>This is a modal! I am scrollable while the body is not!</p>
          <button @click="closeModal">Close modal</button>
     </div>
@@ -62,10 +64,10 @@ export default {
     },
     methods: {
         closeModal() {
-            this.modalIsOpen = false;
+            this.$set(this, 'modalIsOpen', false)
         },
         openModal() {
-            this.modalIsOpen = true;
+            this.$set(this, 'modalIsOpen', true)
         }
     }
 }
