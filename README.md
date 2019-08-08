@@ -79,8 +79,8 @@ export default {
 Reserves the width of the scrollbar and prevents the unpleasant flickering effect that can occur when locking the body scroll.<br>
 More info [here](https://github.com/willmcpo/body-scroll-lock#options).
 
-To enable the `reserveScrollBarGap` option add `:reserveScrollBarGap` after `v-body-scroll-lock` or `v-bsl`.<br>
-Example: `v-body-scroll-lock:reserveScrollBarGap="modalIsOpen"`.
+To enable the `reserveScrollBarGap` option add `:reserve-scroll-bar-gap` after `v-body-scroll-lock` or `v-bsl`.<br>
+Example: `v-body-scroll-lock:reserve-scroll-bar-gap="modalIsOpen"`.
 
 <a name="issues"></a>
 ## Issues

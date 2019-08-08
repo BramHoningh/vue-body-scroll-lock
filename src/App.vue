@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <transition name="fade">
-          <Modal v-body-scroll-lock:reserveScrollBarGap="modalIsOpen"
+          <Modal v-body-scroll-lock:reserve-scroll-bar-gap="modalIsOpen"
                  v-show="modalIsOpen"
                  :modal-is-open="modalIsOpen"
                  @closeModal="closeModal" />
