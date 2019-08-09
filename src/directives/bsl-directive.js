@@ -1,6 +1,6 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
-const RESERVE_SCROLL_BAR_GAP = 'reserveScrollBarGap';
+const RESERVE_SCROLL_BAR_GAP = 'reserve-scroll-bar-gap';
 const options = {
     reserveScrollBarGap: true
 };
